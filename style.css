@@ -1,0 +1,143 @@
+/* CSS principal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFDD0; /* Fond lavande clair */
+    color: #0a2647; /* Bleu foncé */
+    line-height: 1.6;
+}
+
+header {
+    background: transparent;
+    padding: 20px;
+    text-align: left;
+}
+
+header h1 {
+    color: #0a2647;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: line;
+    align-items: left;
+    padding: 20px;
+}
+#lien {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 0%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-links a {
+    display: block;
+    margin-bottom: 5px;
+    color: #0a2647;
+    text-decoration: none;
+}
+
+#competences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.competence {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.competence h2 {
+    text-align: left;
+    margin: 0 0 10px;
+    color: #0a2647;
+}
+
+.competence-content {
+    margin-bottom: 15px;
+}
+
+.competence p {
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.competence img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.home-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.home-button img {
+    width: 10%;
+    height: 10%;
+    display: block;
+}
+.competence-tags {
+    margin-top: 15px;
+    display: flex;
+    gap: 6px;
+}
+.competence-tags-name {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.tag {
+    width: auto;
+    height: auto;
+    background-color: #4caf50;
+    border-radius: 3px;
+}
+.tag2 {
+    width: auto;
+    height: auto;
+    background-color: #a74caf;
+    border-radius: 3px;
+}
+
+/* Onglets */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    color: #0a2647;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab-btn.active {
+    background: #0a2647;
+    color: #fff;
+}
